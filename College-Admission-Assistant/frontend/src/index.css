@@ -195,3 +195,22 @@ body {
   0%, 80%, 100% { transform: scale(0); }
   40% { transform: scale(1); }
 }
+
+/* Markdown styling for bot messages */
+.bot-message p {
+  margin-bottom: 8px;
+}
+.bot-message p:last-child {
+  margin-bottom: 0;
+}
+.bot-message ul, .bot-message ol {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+.bot-message h3, .bot-message h4 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+.bot-message strong {
+  color: #a5b4fc;
+}
