@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import './index.css';
 
 function App() {
@@ -64,7 +65,7 @@ function App() {
       <div className="chat-container">
         {messages.map((msg, idx) => (
           <div key={idx} className={`message ${msg.isBot ? 'bot-message' : 'user-message'}`}>
-            {msg.text}
+            {msg.isBot ? <ReactMarkdown>{msg.text}</ReactMarkdown> : msg.text}
           </div>
         ))}
         {isLoading && (
